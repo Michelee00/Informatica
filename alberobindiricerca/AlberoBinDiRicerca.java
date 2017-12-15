@@ -5,10 +5,6 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * @author matteo.pagano
- */
 public class AlberoBinDiRicerca {
 	private NodoConcDopp<Comparable> root;
 
