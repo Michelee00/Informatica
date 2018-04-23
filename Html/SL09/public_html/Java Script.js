@@ -9,7 +9,7 @@ function get(){
 	nome=document.getElementById("nome");
 	cognome=document.getElementById("cognome");
 	matricola=document.getElementById("matricola");
-	//regione_di_residenza=document.getElementById("regione_di_residenza").value;
+	regione_di_residenza=document.getElementById("regione_di_residenza");
 	email=document.getElementById("email");
 	telefono=document.getElementById("telefono");
 	richieste_particolari=document.getElementById("richieste_particolari");
@@ -19,13 +19,13 @@ function invia(){
 		alert("Error 404: surname not found");
 	if(nome.value=="")
 		alert("Error 404 : name not found");
-	if(telefono.value==0)
-		alert("Error 404: number not found");
+	if(regione_di_residenza.options[regione_di_residenza.selectedIndex].value=="")
+		alert("Error 404: regione not found");
 	if(email.value=="")
 		alert("Error 404: email not found");
 	if(telefono.value=="")
 		alert("Error 404: number not found");
 }
 function reset(){
-	
+	location.reload();
 }
