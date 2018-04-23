@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>SL09</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="Java Script.js"></script>
+	</head>
+	<body>
+		<form>
+			Cognome: <br><input type="text" id="cognome" maxlength="40"><br>
+			Nome:<br><input type="text" id="nome" maxlength="30"><br>
+			Matricola:<br><input type="number" id="matricola"><br>
+			Regione di residenza:<br>
+			<select id="regione_di_residenza">
+				<option></option>
+				<option>Abruzzo</option>
+				<option>Basilicata</option>
+				<option>Calabria</option>
+				<option>Campania</option>
+				<option>Emilia-Romagna</option>
+				<option>Friuli-Venezia-Giulia</option>
+				<option>Lazio</option>
+				<option>Liguria</option>
+				<option>Lombardia</option>
+				<option>Marche</option>
+				<option>Molise</option>
+				<option>Piemonte</option>
+				<option>Puglia</option>
+				<option>Sardegna</option>
+				<option>Sicilia</option>
+				<option>Toscana</option>
+				<option>Trentino-Alto Adige</option>
+				<option>Umbria</option>
+				<option>Valle d'Aosta</option>
+				<option>Veneto</option>
+			</select><br>
+			Email<br><input type="text" id="email" maxlength="15"><br>
+			Telefono:<br><input type="text" id="telefono" maxlength="15"><br>
+			Richieste particolari:<br><textarea id="richieste_particolari" rows="12" cols="60"></textarea><br><br>
+			<input type="button" onclick="invia()" value="Invia"> <input type="button" onclick="reset()" value="Reset"><br>
+			<a href="http://localhost:8383/SL09/index1.html">Folowing</a>
+		</form>
+		<script>get();</script>
+	</body>
+</html>

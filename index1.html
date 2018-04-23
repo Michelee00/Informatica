@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="Java Script 1.js"></script>
+	</head>
+	<body>
+		<form>
+			Nome e Cognome:<br><input type="text" id="nomeEcognome" maxlength="50" onblur="ascoltoNomeCognome()"><br>
+			Sesso:<br><input type="radio" name="sesso" value="Maschio" onblur="ascoltoSesso()">Maschio <input type="radio" name="sesso" value="Femmina">Femmina<br>
+			Selezione un univerità:<br>
+			<select id="università" onblur="ascoltoUniversità()">
+				<option></option>
+				<option>Univerità degli Studi di PADOVA</option>
+				<option>Univerità degli Studi di UDINE</option>
+				<option>Univerità "Cà Foscari" VENEZIA</option>
+				<option>Univerità IUAV di VENEZIA</option>
+				<option>Univerità degli Studi di VERONA</option>
+			</select>
+			<br>Cap:<br><input type="number" id="cap" onblur="ascoltoCap()"><br>
+			<input type="checkbox" id="studenteLavoratore">Studente e/o Lavoratore<br>
+			Descrizione del lavoro svolto:<br><input type="text" id="descrizione_del_lavoro_svolto" maxlength="80"><br><br>
+			<input type="button" onclick="invia()" value="Invia"> <input type="button" onclick="reset()" value="Reset"><br>
+			<a href="http://localhost:8383/SL09/index.html">Previous</a>
+		</form>
+		<script>getView();</script>
+	</body>
+</html>
