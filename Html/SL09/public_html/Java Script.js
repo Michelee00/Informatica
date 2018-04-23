@@ -5,7 +5,7 @@ let regione_di_residenza;
 let email;
 let telefono;
 let richieste_particolari;
-function getView(){
+function get(){
 	nome=document.getElementById("nome");
 	cognome=document.getElementById("cognome");
 	matricola=document.getElementById("matricola");
