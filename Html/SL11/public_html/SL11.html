@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gioco di Simone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label class="label" id="lvl">Livello raggiunto: 0</label>
+        </td>
+        <td>
+            <h3>Simon's game</h3>
+        </td>
+        <td>
+            <label class="label" id="time">Tempo rimasto: 0</label>
+        </td>
+        <td>
+            <button id="start" onclick="play()">Start</button>
+        </td>
+        <td>
+            <button id="reset" onclick="reset()">Reset</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="white" id="red"/>
+            </svg>
+        </td>
+        <td>
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="white" id="green"/>
+            </svg>
+        </td>
+        <td>
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="white" id="blue"/>
+            </svg>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <button class="button button1" onclick="checkCombinazione(0)">Red</button>
+        </td>
+        <td>
+            <button class="button button2" onclick="checkCombinazione(1)">Green</button>
+        </td>
+        <td>
+            <button class="button button3" onclick="checkCombinazione(2)">blue</button>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br><label class="label" id="wl"></label>
+</body>
+</html>
